@@ -26,23 +26,10 @@
                 <artifactId>azure-functions-maven-plugin</artifactId>
                 <version>1.13.2</version>
                 <configuration>
-                    <appName>${functionAppName}</appName>
-                    <!-- Other configurations -->
+                    <appName>${myFunc}</appName>
                 </configuration>
             </plugin>
             <!-- Add your build plugins here -->
         </plugins>
     </build>
 </project>
-<profiles>
-    <profile>
-        <id>java-17</id>
-        <activation>
-            <activeByDefault>true</activeByDefault>
-        </activation>
-        <properties>
-            <maven.compiler.source>17</maven.compiler.source>
-            <maven.compiler.target>17</maven.compiler.target>
-        </properties>
-    </profile>
-</profiles>
