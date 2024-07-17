@@ -9,6 +9,12 @@
     <version>1.0.0</version>
 
     <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <java.version>1.8</java.version>
+        <azure.functions.maven.plugin.version>1.6.0</azure.functions.maven.plugin.version>
+        <azure.functions.java.library.version>1.3.1</azure.functions.java.library.version>
+        <functionAppName>fabrikam-functions-20200718015742191</functionAppName>
+        <stagingDirectory>${project.build.directory}/azure-functions/${functionAppName}</stagingDirectory>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
         <functionAppName>myFunc</functionAppName>
@@ -24,9 +30,10 @@
             <plugin>
                 <groupId>com.microsoft.azure</groupId>
                 <artifactId>azure-functions-maven-plugin</artifactId>
-                <version>1.13.2</version>
+                <version>1.36.0</version>
                 <configuration>
-                    <appName>${myFunc}</appName>
+                    <appName>${functionAppName}</appName>
+                    <!-- Other configurations -->
                 </configuration>
             </plugin>
             <!-- Add your build plugins here -->
