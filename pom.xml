@@ -11,6 +11,7 @@
     <properties>
         <maven.compiler.source>1.8</maven.compiler.source>
         <maven.compiler.target>1.8</maven.compiler.target>
+        <functionAppName>myFunc</functionAppName>
     </properties>
 
     <dependencies>
@@ -20,6 +21,15 @@
 
     <build>
         <plugins>
+            <plugin>
+                <groupId>com.microsoft.azure</groupId>
+                <artifactId>azure-functions-maven-plugin</artifactId>
+                <version>YourPluginVersion</version>
+                <configuration>
+                    <appName>${myFunc}</appName>
+                    <!-- Other configurations -->
+                </configuration>
+            </plugin>
             <!-- Add your build plugins here -->
         </plugins>
     </build>
