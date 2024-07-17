@@ -27,20 +27,6 @@
                 <version>1.13.2</version>
                 <configuration>
                     <appName>${myFunc}</appName>
-                    <region>Germany West Central </region>
-                    <runtime>
-                        <os>Windows</os>
-                        <javaVersion>java17</javaVersion>
-                        <appSettings>
-                            <property>
-                                <name>FUNCTIONS_EXTENSION_VERSION</name>
-                                <value>~3</value>
-                            </property>
-                            <property>
-                                <name>FUNCTIONS_WORKER_RUNTIME</name>
-                                <value>java</value>
-                            </property>
-                        </appSettings>
                 </configuration>
             </plugin>
             <!-- Add your build plugins here -->
